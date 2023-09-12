@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
 GY_data = pd.read_csv('/workspaces/IDS706-python-Data-Visualization-XS110/Global YouTube Statistics.csv', encoding="ISO-8859-1")
 
