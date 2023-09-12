@@ -8,6 +8,9 @@ boto3==1.24.87
 #web
 fastapi==0.85.0
 uvicorn==0.18.3
+#script
+pandas==2.1.0
+matplotlib==3.7.2
 
 
 
