@@ -5,7 +5,7 @@
 
 The data is from kaggle [Global YouTube Statistics](https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023). It has 28 columns with comprehensive details on top creators' subscriber counts, video views, upload frequency, country of origin, earnings, and more.
 
-I downloaded `Global YouTube Statistics.csv` frrom kaggle and uploaded it into this resporitory.
+I downloaded `Global YouTube Statistics.csv` from kaggle and uploaded it into this resporitory.
 
 ## Setup
 
@@ -16,13 +16,13 @@ pandas==2.0.3
 matplotlib==3.7.2
 
 ```
-### 2. Create a new python script `Descriptive_statistics_script.py`
+### 2. Create a new python script `test_script.py`
 
 ### 3. Update Makefile
 
 ```
 test:
-	python -m pytest -vv --cov=main --cov=mylib Descriptive_statistics_script*.py
+	python -m pytest -vv --cov=main --cov=mylib test_*.py
 
 ```
 
