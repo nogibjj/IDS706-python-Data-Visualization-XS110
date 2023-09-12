@@ -1,25 +1,43 @@
-[![CI](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml)
-## Template for Python projects 
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+# Global YouTube Statistics 2023 
 
-Things included are:
+## Data
 
-* `Makefile`
+The data is from kaggle [Global YouTube Statistics](https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023). It has 28 columns with comprehensive details on top creators' subscriber counts, video views, upload frequency, country of origin, earnings, and more.
 
-* `Pytest`
+I downloaded `Global YouTube Statistics.csv` frrom kaggle and uploaded it into this resporitory.
 
-* `pandas`
+## Setup
 
-* `Pylint`
+### 1. Update requirements.txt:
+```
+#script
+pandas==2.0.3
+matplotlib==3.7.2
 
-* `Dockerfile`
+```
+### 2. Create a new python script `Descriptive_statistics_script.py`
 
-* `GitHub copilot`
+### 3. Update Makefile
 
-* `jupyter` and `ipython` 
+```
+test:
+	python -m pytest -vv --cov=main --cov=mylib Descriptive_statistics_script*.py
 
-* A base set of libraries for devops and web
+```
 
-* `githubactions` 
+## Data Visualization
 
+I analyse the top creators' subscriber counts, video views, upload frequency, country of origin, earnings.
+
+### 1. Summary statistics using the describe method
+
+![Alt text](image1.png)
+
+### 2. Mean, Median and Mode
+
+![Alt text](image2.png)
+
+### 3. Variance and standard deviation
+
+![Alt text](image3.png)
