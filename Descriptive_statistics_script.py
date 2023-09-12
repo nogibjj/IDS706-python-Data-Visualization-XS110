@@ -1,6 +1,6 @@
 import pandas as pd
 
-GY_data = pd.read_csv('/workspaces/IDS706-python-Data-Visualization-XS110/Global YouTube Statistics.csv', encoding="ISO-8859-1")
+GY_data = pd.read_csv('Global YouTube Statistics.csv', encoding="ISO-8859-1")
 
 
 
