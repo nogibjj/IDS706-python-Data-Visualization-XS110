@@ -4,6 +4,7 @@ install:
 
 test:
 	python -m pytest -vv --cov=main --cov=mylib test_*.py
+	python -m pytest -vv --cov=main --cov=mylib Descriptive_statistics_script*.py
 
 format:	
 	black *.py 
