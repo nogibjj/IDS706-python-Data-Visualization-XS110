@@ -41,3 +41,7 @@ I analyse the top creators' subscriber counts, video views, upload frequency, co
 ### 3. Variance and standard deviation
 
 ![Alt text](image3.png)
+
+### 4. histogram of subscribers
+
+![Alt text](image4.png)
