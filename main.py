@@ -1,18 +1,17 @@
-"""
-Main cli or app entry point
-"""
+from script import descript_stat
+from script import plot_histogram
+import pandas as pd
 
-from mylib.calculator import add
-import click
+GY_data = pd.read_csv('Global YouTube Statistics.csv', encoding="ISO-8859-1")
 
 
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
+
+#Top creators' subscriber counts, video views, upload frequency
+
+df = GY_data[['subscribers','video views','uploads']]
 
 
 if __name__ == "__main__":
     # pylint: disable=no-value-for-parameter
-    add_cli()
+    descript_stat(df)
+    plot_histogram(df)
