@@ -62,8 +62,8 @@ GY_data = pd.read_csv('Global YouTube Statistics.csv', encoding="ISO-8859-1")
 
 #Top creators' subscriber counts, video views, upload frequency
 
-df = GY_data[['subscribers','video views','uploads']]
+data = GY_data[['subscribers','video views','uploads']]
 
 if __name__ == "__main__":
-    descript_stat(df)
-    plot_histogram(df)
+    descript_stat(data)
+    plot_histogram(data)
