@@ -45,7 +45,7 @@ def descript_stat(df):
     # # Display the histogram
     # plt.show()
 
-def plot_histogram(data):
+def plot_histogram(df):
     """
     Plot a histogram 
 
